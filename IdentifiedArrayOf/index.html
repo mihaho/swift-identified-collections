@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdentifiedCollections - IdentifiedArrayOf</title>
+    <link rel="stylesheet" type="text/css" href="/swift-identified-collections/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="/swift-identified-collections/">
+            <strong>
+                IdentifiedCollections
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol/>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Typealias</small>
+    <span class="name">Identified​Array​Of</span>
+</h1>
+
+<div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">typealias</span> <span class="variable">IdentifiedArrayOf</span>&lt;<span class="variable">Element</span>&gt; = <a href="/swift-identified-collections/IdentifiedArray"><span class="type">IdentifiedArray</span></a>&lt;<span class="type">Element</span>.<span class="type">ID</span>, <span class="type">Element</span>&gt;
+<span class="keyword">where</span> <span class="type">Element</span>: <span class="type">Identifiable</span></body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>A convenience type alias that specifies an <code>IdentifiedArray</code> by an element conforming to the
+<code>Identifiable</code> protocol.</p>
+
+</div>
+<div class="discussion">
+    <html><body><pre class="highlight"><code><span class="keyword">struct</span> <span class="type">User</span>: <span class="type">Identifiable</span> { <span class="keyword">var</span> <span class="variable">id</span>: <span class="type">String</span> }
+<span class="keyword">var</span> <span class="variable">users</span>: <span class="type">IdentifiedArrayOf</span>&lt;<span class="type">User</span>&gt; = []
+</code></pre></body></html>
+</div>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-07-11T22:23:54+0000">July 11, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>
